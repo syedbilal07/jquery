@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Set</title>
+	<script src="../../../Libraries/jQuery Library/jquery.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="../../../Libraries/Bootstrap Library/css/bootstrap.min.css">
+	<script src="../../../Libraries/Bootstrap Library/js/jquery.min.js"></script>
+	<script src="../../../Libraries/Bootstrap Library/js/bootstrap.min.js"></script>
+	<meta charset="UTF-8">
+	<script>
+	$(document).ready(function(){
+		$("#text").click(function(){
+			$("#para1").text("Hello World !");
+		}
+		);
+		$("#html").click(function()
+		{
+			$("#para2").html("<b>Hello World !</b>");
+		}
+		);
+		$("#value").click(function()
+		{
+			$("#input").val("Sadia Iqbal Khan");
+		}
+		);
+	}
+	);
+	</script>
+	</head>
+		<body><br />
+		<p id="para1">This Is A Paragraph</p>
+		<p id="para2">This Is Another Paragraph</p>
+		<label class="control-label">Input Field :</label><input type="text" value="Syed Bilal" id="input" class="form-control"></input><br /><br />
+		<button id="text" class="btn btn-success btn-lg">Set Text</button>
+		<button id="html" class="btn btn-danger btn-lg">Set HTML</button>
+		<button id="value" class="btn btn-info btn-lg">Set Value</button>
+		</body>
+</html>

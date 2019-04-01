@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>DOM Manipulation</title>
+	<script src="../../../Libraries/jQuery Library/jquery.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="../../../Libraries/Bootstrap Library/css/bootstrap.min.css">
+	<script src="../../../Libraries/Bootstrap Library/js/jquery.min.js"></script>
+	<script src="../../../Libraries/Bootstrap Library/js/bootstrap.min.js"></script>
+	<meta charset="UTF-8">
+	<style>
+	.div3
+	{ 
+	margin:10px;padding:12px; border:2px solid #666; width:60px;
+	}
+	</style>
+	<script>
+	$(document).ready(function()
+	{
+		$("#div1").click(function()
+		{
+			var content=$(this).text();
+			$("#result").text(content);
+		}
+		);
+		$("#div2").click(function()
+		{
+			$(this).replaceWith("<h1>JQuery Is Great!</h1>");
+		}
+		);
+			 $("div3").click(function () {
+               $(this).before('<div class="div3"></div>' );
+            });
+         });
+	
+	</script>
+	</head>
+		<body>
+			<h1>DOM Manipulation</h1>
+			<p>Click On The Square Box Below</p>
+			<h1>Adds Text When You Click On DIV</h1>
+			<span id="result"></span>
+			<div id="div1" style="background-color:green;height:400px;width:400px">
+				 <p style="color:gold;font-size:40px;">This is Green Square!!</p>
+			</div><br />
+			<h1>Replace Text When You Click On DIV</h1>
+			<div id="div2" style="background-color:blue;height:400px;width:400px">
+				 <p style="color:gold;font-size:40px;">This is Green Square!!</p>
+			</div>
+			<h1>Add Content After DIV</h1>
+			<p>Click on any square below:</p>
+			<span id = "result"> </span>
+			<div class="div3" style = "background-color:blue;"></div>
+			<div class="div3" style = "background-color:green;"></div>
+			<div class="div3" style = "background-color:red;"></div>
+			
+		</body>
+</html>

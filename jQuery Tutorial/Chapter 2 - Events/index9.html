@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Events</title>
+	<script src="../../../Libraries/jQuery Library/jquery.js" type="text/javascript"></script>
+	<meta charset="UTF-8">
+	<script>
+	$(document).ready(function()
+	{
+		$("p").on("mouseenter",function()
+		{
+			$(this).css("background-color","silver");
+		}
+		);
+		$("p").on("mouseout",function()
+		{
+			$(this).css("background-color","gold");
+		});
+		$("p").on("click",function()
+		{
+			$(this).css("background-color","lightgreen");
+		}
+		);
+		$("p").on("dblclick",function()
+		{
+			$(this).css("background-color","red");
+		});
+	}
+	);
+	</script>
+	</head>
+		<body>
+		<h1>On Multiple Function</h1>
+		<h4>Attach multiple event handlers to a p element using on function:</h4>
+		<p>Click or move the mouse pointer over this paragraph.</p>
+		</body>
+</html>

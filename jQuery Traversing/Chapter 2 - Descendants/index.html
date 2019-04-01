@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Descendants</title>
+	<script src="../../../Libraries/jQuery Library/jquery.js" type="text/javascript"></script>
+	<meta charset="UTF-8">
+	<style>
+	.descendants * 
+	{ 
+		display: block;
+		border: 2px solid lightgrey;
+		color: lightgrey;
+		padding: 5px;
+		margin: 15px;
+	}
+	</style>
+	<script>
+	$(document).ready(function()
+	{
+		$(".descendants").children().css({"color":"green","border":"2px solid green"});
+	}
+	);
+	</script>
+	</head>
+		<body>
+		<h1>Children Method()</h1>
+		<p>The children() method returns all direct children of the selected element.</p>
+		<p>This method only traverse a single level down the DOM tree.</p>
+		<p>The following example returns all elements that are direct children of each div elements:</p>
+		<div class="descendants" style="width:500px;">div (current element) 
+			<p>p (child)
+				<span>span (grandchild)</span>     
+			</p>
+			<p>p (child)
+				<span>span (grandchild)</span>
+			</p> 
+		</div>
+		</body>
+</html>

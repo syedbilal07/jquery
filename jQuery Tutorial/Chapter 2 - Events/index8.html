@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Events</title>
+	<script src="../../../Libraries/jQuery Library/jquery.js" type="text/javascript"></script>
+	<meta charset="UTF-8">
+	<script>
+	$(document).ready(function()
+	{
+		$("p").on("click",function()
+		{
+			$(this).hide();
+		}
+		);
+	}
+	);
+	</script>
+	</head>
+		<body>
+		<h1>On Function</h1>
+		<h4>The on() method attaches one or more event handlers for the selected elements.<br />
+			Attach a click event to a p element:</h4>
+		<p>If you click on me, I will disappear.</p>
+		<p>Click me away!</p>
+		<p>Click me too!</p>
+		</body>
+</html>

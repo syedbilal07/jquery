@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Selectors</title>
+	<script src="../../../Libraries/jQuery Library/jquery.js" type="text/javascript"></script>
+	<meta charset="UTF-8">
+	<script>
+	$(document).ready(function()
+	{
+		$("button").click(function()
+		{
+			$("a[target!='_blank']").hide();
+		});
+	});
+	</script>
+	</head>
+		<body>
+		<h1>Selects All Elements With href Attribute Without Blank Target</h1>
+		<p>This is a paragraph.</p>
+		<p>This is another paragraph.</p>
+		<p><a href="http://www.w3schools.com/html/">HTML Tutorial</a></p>
+		<p><a href="http://www.w3schools.com/css/" target="_blank">CSS Tutorial</a></p>
+		<button>Click me to hide paragraphs</button>
+		</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Dimensions</title>
+	<script src="../../../Libraries/jQuery Library/jquery.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="../../../Libraries/Bootstrap Library/css/bootstrap.min.css">
+	<script src="../../../Libraries/Bootstrap Library/js/jquery.min.js"></script>
+	<script src="../../../Libraries/Bootstrap Library/js/bootstrap.min.js"></script>
+	<meta charset="UTF-8">
+	<style>
+	#div1
+	{
+		border:1px solid blue;
+		background-color:lightblue;
+		height:250px;
+		width:300px;
+		margin:10px;
+		padding:5px;
+		box-sizing:content-box;
+	}
+	#div2
+	{
+		border:1px solid green;
+		background-color:lightgreen;
+		height:350px;
+		width:350px;
+		margin:10px;
+		padding:5px;
+		box-sizing:content-box;
+	}
+	#div3
+	{
+		border:1px solid red;
+		background-color:golden;
+		height:400px;
+		width:400px;
+		margin:5px;
+		padding:5px;
+		box-sizing:content-box;
+	}
+	#div4
+	{
+		border:1px solid green;
+		background-color:silver;
+		height:200px;
+		width:200px;
+		margin:5px;
+		padding:5px;
+		box-sizing:content-box;
+	}
+	</style>
+	<script>
+	$(document).ready(function()
+	{
+		$("#btn1").click(function()
+		{
+			var txt="";
+			txt +="Width Of DIV : " + $("#div1").width() + "</br>";
+			txt +="Height Of DIV : " + $("#div1").height();
+			$("#div1").html(txt);
+		}
+		);
+		$("#btn2").click(function()
+		{
+			var txt1='';
+			txt1 +="Inner Width Of DIV : " + $("#div2").innerWidth() + "</br>";
+			txt1 +="Inner Height Of DIV: " + $("#div2").innerHeight();
+			$("#div2").html(txt1);
+			
+		}
+		);
+		
+		$("#btn3").click(function()
+		{
+			var txt2='';
+			txt2 +="Outer Width : " + $("#div3").outerWidth() + "</br>";
+			txt2 +="Outer Height : " + $("#div3").outerHeight();
+			$("#div3").html(txt2)
+		}
+		);
+		$("#btn4").click(function()
+		{
+			var txt3='';
+			txt3 +="Document Width/Height : " + $(document).width();
+			txt3 +="x" + $(document).height() + "\n";
+			txt3 +="Window Width/Height : " + $(window).width();
+			txt3 +="x" + $(window).height();
+			alert(txt3);
+		}
+		);
+		$("#btn5").click(function()
+		{
+			$("#div4").width(500).height(500);
+		}
+		);
+		
+	}
+	);
+	</script>
+	</head>
+		<body>
+		<div class="jumbotron">
+			<div id="div1">
+			
+			</div>
+			<button class="btn btn-success btn-lg" id="btn1">Display Height & Width Of DIV</button>
+			<div id="div2">
+			
+			</div>
+			<button class="btn btn-info btn-lg" id="btn2">Display Inner Height & Width Of DIV</button>
+			<div id="div3">
+			
+			</div>
+			<button class="btn btn-default btn-lg" id="btn3">Display Outer Height & Width Of DIV</button><br /><br /><hr />
+			<div id="div4">
+			
+			</div>
+			<button class="btn btn-danger btn-lg" id="btn4">Display Dimensions Of Document & Window</button>
+			<button class="btn btn-default btn-lg" id="btn5">Resize DIV</button>
+		</div>
+		</body>
+</html>

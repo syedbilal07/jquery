@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Toggle Class Attribute</title>
+	<script src="../../../Libraries/jQuery Library/jquery.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="../../../Libraries/Bootstrap Library/css/bootstrap.min.css">
+	<script src="../../../Libraries/Bootstrap Library/js/jquery.min.js"></script>
+	<script src="../../../Libraries/Bootstrap Library/js/bootstrap.min.js"></script>
+	<meta charset="UTF-8">
+	<style>
+		.red { color:red; }
+		.green { color:green; }
+	</style>
+	<script>
+	$(document).ready(function()
+	{
+		$("#p1").click(function()
+		{
+			$("#p1").toggleClass("red");
+		}
+		);
+		$("#p2").click(function()
+		{
+			$("#p2").toggleClass("green");
+		}
+		);
+	}
+	);
+	</script>
+	</head>
+		<body>
+			<h1>Toggle Class Attribute</h1>
+			<p class = "red" id = "p1">This is first paragraph.</p>
+      <p class = "green" id = "p2">This is second paragraph.</p>
+		</body>
+</html>

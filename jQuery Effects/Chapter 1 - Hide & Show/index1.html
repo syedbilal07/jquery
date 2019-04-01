@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Hide</title>
+	<script src="../../../Libraries/jQuery Library/jquery.js" type="text/javascript"></script>
+	<meta charset="UTF-8">
+	<style>
+	div.ex
+	{
+		padding:7px;
+		background-color:#e5eecc;
+		border:solid 1px #c3c3c3;
+	}
+	</style>
+	<script>
+	$(document).ready(function()
+	{
+		$(".ex .hide").click(function()
+		{
+			$(this).parents(".ex").hide("slow");
+		}
+		);
+	}
+	);
+	</script>
+	</head>
+		<body>
+		<h1>Hiding Elements & DIV With Smooth Effect</h1>
+		<h3>Island Trading</h3>
+		<div class="ex">
+			<button class="hide">Hide me</button>
+			<p>Contact: Helen Bennett<br> 
+			   Garden House Crowther Way<br>
+			   London</p>
+		</div>
+		<h3>Paris spécialités</h3>
+		<div class="ex">
+			<button class="hide">Hide me</button>
+			<p>Contact: Marie Bertrand<br> 
+			   265, Boulevard Charonne<br>
+			   Paris</p>
+		</div>
+		</body>
+</html>

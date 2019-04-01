@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Add</title>
+	<script src="../../../Libraries/jQuery Library/jquery.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="../../../Libraries/Bootstrap Library/css/bootstrap.min.css">
+	<script src="../../../Libraries/Bootstrap Library/js/jquery.min.js"></script>
+	<script src="../../../Libraries/Bootstrap Library/js/bootstrap.min.js"></script>
+	<meta charset="UTF-8">
+	<script>
+	$(document).ready(function()
+	{
+		$("#append").click(function()
+		{
+			$("#para1").append("<b> Appended Text.</b>");
+		}
+		);
+		$("#append1").click(function()
+		{
+			$("#list").append("<li>Appended List Item.</li>");
+		}
+		);
+		$("#prepend").click(function()
+		{
+			$("#para1").prepend("<b><i>Prepended Text.</i></b>");
+		}
+		);
+		$("#prepend1").click(function()
+		{
+			$("#list").prepend("<b><i>Prepended List Item.</i></b>");
+		}
+		);
+		$("#before").click(function()
+		{
+			$("#w3").before("<b>Before</b>");
+		}
+		);
+		$("#after").click(function()
+		{
+			$("#w3").after("<b>After</b>");
+		}
+		);
+	}
+	);
+	</script>
+	</head>
+		<body>
+		<div class="jumbotron">
+		<p id="para1">This Is A Paragraph.</p>
+		<ul id="list">
+			<li>List Item 1</li>
+			<li>List Item 2</li>
+			<li>List Item 3</li>
+		</ul>
+		<img src="w3schools.gif" alt="w3schools" height="100px" width="100px" id="w3"/><br /><br />
+		<button class="btn btn-warning btn-lg" id="append">Append Text</button>
+		<button class="btn btn-warning btn-lg" id="prepend">Prepend Text</button>
+		<button class="btn btn-success btn-lg" id="append1">Append List Items</button>
+		<button class="btn btn-success btn-lg" id="prepend1">Prepend List Items</button>
+		<button class="btn btn-success btn-lg" id="before">Insert Before Image</button>
+		<button class="btn btn-success btn-lg" id="after">Insert After Image</button>
+		</div>
+		</body>
+</html>

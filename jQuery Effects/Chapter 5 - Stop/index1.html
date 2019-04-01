@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Stop</title>
+	<script src="../../../Libraries/jQuery Library/jquery.js" type="text/javascript"></script>
+	<meta charset="UTF-8">
+	<script>
+	$(document).ready(function()
+	{
+		$("#start").click(function()
+		{
+			var div = $("div");
+			$("div").animate({left:'200px'},4000);
+			$("div").animate({fontSize:'3.7em'},4000);
+			
+		}
+		);
+		$("#stop").click(function()
+		{
+			$("div").stop();
+		}
+		);
+		$("#stopall").click(function()
+		{
+			$("div").stop(true);
+		}		
+		);
+		$("#stopfinish").click(function()
+		{
+			$("div").stop(true, true);
+		}		
+		);
+	}
+	);
+	</script>
+	</head>
+		<body>
+		<button id="start">Start</button>
+		<button id="stop">Stop</button>
+		<button id="stopall">Stop All</button>
+		<button id="stopfinish">Stop But Finish</button><br /><br />
+		<div style="background:#98bf21;height:100px;width:200px;position:absolute;">HELLO</div>
+		</body>
+</html>

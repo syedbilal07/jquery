@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Hide & Show</title>
+	<script src="../../../Libraries/jQuery Library/jquery.js" type="text/javascript"></script>
+	<meta charset="UTF-8">
+	<script>
+	$(document).ready(function()
+	{
+		$("#hide").click(function()
+		{
+			$("p").hide();
+		}
+		);
+		$("#show").click(function()
+		{
+			$("p").show();
+		}
+		);
+	});
+	</script>
+	</head>
+		<body>
+		<p>If you click on the "Hide" button, I will disappear.</p>
+		<button id="hide">Hide</button>
+		<button id="show">Show</button>
+
+
+		</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Filtering</title>
+	<script src="../../../Libraries/jQuery Library/jquery.js" type="text/javascript"></script>
+	<meta charset="UTF-8">
+	<script>
+	$(document).ready(function()
+	{
+		$("p").filter(".intro").css("background-color","lightgreen");
+	}
+	);
+	</script>
+	</head>
+		<body>
+		<p>The filter() method lets you specify a criteria. Elements that do not match the criteria are removed from the
+		selection, and those that match will be returned.</p>
+		<p>The following example returns all <p> elements with class name "intro":</p>
+		<h1>Filter() Method</h1>
+		<h1>Welcome to My Homepage</h1>
+		<p>My name is Donald (index 0).</p>
+		<p class="intro">Donald Duck (index 1).</p>
+		<p>I live in Duckburg (index 2).</p>
+		<p class="intro">My best friend is Mickey (index 3).</p>
+		</body>
+</html>

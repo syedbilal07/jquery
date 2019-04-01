@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Animate</title>
+	<script src="../../../Libraries/jQuery Library/jquery.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="../../../Libraries/Bootstrap Library/css/bootstrap.min.css">
+	<script src="../../../Libraries/Bootstrap Library/js/jquery.min.js"></script>
+	<script src="../../../Libraries/Bootstrap Library/js/bootstrap.min.js"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<script>
+	$(document).ready(function()
+	{
+		$("button").click(function()
+		{
+			var div = $("div");
+			div.animate({left:'200px'},"slow");
+			div.animate({fontSize:'4.3em'},"slow");
+		}
+		);
+	}
+	);
+	
+	</script>
+	</head>
+		<body>
+		<h1>jQuery Animation</h1>
+		<button class="btn btn-info btn-lg">Start Animation</button>
+		<p>By default, all HTML elements have a static position, and cannot be moved. To manipulate the position,
+		remember to first set the CSS position property of the element to relative, fixed, or absolute!</p>
+		<div style="background:#98bf21;height:100px;width:200px;position:absolute;">HELLO</div>
+		</body>
+</html>

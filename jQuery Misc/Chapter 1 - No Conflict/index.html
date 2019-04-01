@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>No Conflict</title>
+	<script src="../../../Libraries/jQuery Library/jquery.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="../../../Libraries/Bootstrap Library/css/bootstrap.min.css">
+	<script src="../../../Libraries/Bootstrap Library/js/jquery.min.js"></script>
+	<script src="../../../Libraries/Bootstrap Library/js/bootstrap.min.js"></script>
+	<meta charset="UTF-8">
+	<script>
+	$.noConflict();
+	jQuery(document).ready(function()
+	{
+		jQuery("button").click(function()
+		{
+			alert("jQuery Is Working Fine !");
+		}
+		);
+	}
+	);
+	</script>
+	</head>
+		<body>
+		<h1>jQuery No Conflict Method</h1>
+		<p>What if you wish to use other frameworks on your pages, while still using jQuery?</p>
+		<p>As you already know; jQuery uses the $ sign as a shortcut for jQuery.</p>
+		<p>There are many other popular JavaScript frameworks like: Angular, Backbone, Ember, Knockout, and more.</p>
+		<h2>What if other JavaScript frameworks also use the $ sign as a shortcut?</h2>
+		<p>If two different frameworks are using the same shortcut, one of them might stop working.</p>
+		<p>The jQuery team have already thought about this, and implemented the noConflict() method.</p>
+		<p>The noConflict() method releases the hold on the $ shortcut identifier, so that other scripts can use it.</p>
+		<p>You can of course still use jQuery, simply by writing the full name instead of the shortcut:</p>
+		<button class="btn btn-success btn-lg">Test jQuery!</button>
+		</body>
+</html>

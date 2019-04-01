@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Get</title>
+	<script src="../../../Libraries/jQuery Library/jquery.js" type="text/javascript"></script>
+	<meta charset="UTF-8">
+	<script>
+	$(document).ready(function()
+	{
+		$("#text").click(function()
+		{
+			alert("Text: " + $("#test").text());
+		}
+		);
+		$("#html").click(function()
+		{
+			alert("HTML: " + $("#test").html());
+		}
+		);
+		$("#value").click(function()
+		{
+			alert("Value: " + $("#input").val());
+		}
+		);
+		$("#href").click(function()
+		{
+			alert("Link: " + $("#w3").attr("href"));
+		}
+		);
+	}
+	);
+	</script>
+	</head>
+		<body>
+		<p id="test">This Is Some <b>Bold</b> Text In Paragraph</p><br />
+		<input type="text" value="Syed Bilal" id="input"></input><br /><br />
+		<a href="http://www.w3schools.com" id="w3">W3Schools.com</a><br /><br />
+		<button id="text">Get Text</button>
+		<button id="html">Get HTML</button>
+		<button id="value">Get Value</button>
+		<button id="href">Get Attribute</button>
+		
+		
+		</body>
+</html>

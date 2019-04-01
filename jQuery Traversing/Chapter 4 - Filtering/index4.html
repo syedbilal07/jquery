@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Filtering</title>
+	<script src="../../../Libraries/jQuery Library/jquery.js" type="text/javascript"></script>
+	<meta charset="UTF-8">
+	<script>
+	$(document).ready(function()
+	{
+		$("p").not(".intro").css("background-color","silver");
+	}
+	);
+	</script>
+	</head>
+		<body>
+		<h1>Not() Method</h1>
+		<p class="intro">The not() method returns all elements that do not match the criteria.</p>
+		<p>Tip: The not() method is the opposite of filter().</p>
+		<p>The following example returns all <p> elements that do not have class name "intro":</p>
+		<h1>Welcome to My Homepage</h1>
+		<p class="intro">My name is Donald (index 0).</p>
+		<p>Donald Duck (index 1).</p>
+		<p>I live in Duckburg (index 2).</p>
+		<p class="intro">My best friend is Mickey (index 3).</p>
+		</body>
+</html>
